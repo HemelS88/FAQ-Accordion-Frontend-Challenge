@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    font-family: "Work Sans", serif;
+}
+
+.main {
+    background-color: hsl(275, 100%, 97%);
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-size: 20%;
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 9em;
+    padding-bottom: 10em;
+}
+
+.background__image {
+    width: 100%;
+    height: 30%;
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    font-weight: 600;
+    font-size: medium;
+    color: hsl(292, 42%, 14%);
+    background-color: #fff;
+    border: none;
+    border-bottom: solid 1px lightgray;
+    text-align: left;
+    
+}
+
+button:hover {
+    color: #AD28EB;
+}
+
+.content__wrapper {
+    max-width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+
+.header {
+    display: flex;
+    gap: 2rem;
+    color: #321737;
+}
+
+.collapsible {
+    display: flex;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.content {
+    padding: 0 1em;
+  display: none;
+  overflow: hidden;
+  font-weight: 400;
+  color: hsl(292, 16%, 49%);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .main {
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+    }
+
+    .content__wrapper {
+        max-width: 50%;
+    }
+}
+
